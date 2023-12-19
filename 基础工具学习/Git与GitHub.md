@@ -86,22 +86,6 @@ git merge
 
 如果你继续将你的 repo 推送到 GitHub，你会发现测试分支不会被推送。它只会保留在你的本地 repo 中。如果你想推送你的测试分支，可以用`git checkout test`切换到该分支，然后运行`git push -u origin test`。
 
-## 如何在 Git 中拉取一个仓库
-
-在 Git 中拉取意味着将远程仓库的当前状态克隆到你的电脑/仓库中。当你想在不同的电脑上操作你的仓库时，或者当你在网上为一个开源项目做贡献时，这就很方便了。
-
-要测试这一点，不用担心切换到新的电脑。只要运行`cd ..` 就可以离开当前目录并返回上一层目录。在我自己的例子中，我已经导航回到了我的桌面。
-
-进入 GitHub，在你的仓库的主页上，你应该看到一个绿色的按钮，上面写着 "code"。当你点击这个按钮时，你应该在一个下拉菜单中看到一些选项。继续并复制 HTTPS URL。
-
-之后，运行`git clone YOUR_HTTPS_URL`。这个命令会把远程版本库拉到你的本地电脑上，放在一个叫`git-and-git-tutorial`的文件夹里。就是说：
-
-![Screenshot--101-](Git与GitHub.assets/Screenshot--101-.png)
-
-```shell
-git clone
-```
-
 ### 1.2 Git安装
 
 #### 1.2.1 git bash 
@@ -172,14 +156,7 @@ git branch : 列举所有的分支
 git checkout <branchname> : 单纯地切换到某个分支
 git branch -D <branchname> : 删掉特定的分支
 
-git merge <branchname> : 合并分支
-
-#### 本地与github仓库提交与拉取
-
-git push : 推送当前分支最新的提交到远程
-git pull : 拉取远程分支最新的提交到本地
-
-#### 1.3.2 分支的使用
+git merge <branchname> : 合并分支到主分支
 
 
 
